@@ -1,9 +1,12 @@
 package org.example.thinkjava;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Goodbye {
-    //private static final Logger logger = LogManager.getLogger(getClass());
+    private  static final Logger log =  LoggerFactory.getLogger(Goodbye.class);
     public static void G1() {
-        System.out.print("Goodbye, ");
-                System.out.println("cruel world");
+        log.debug("Good bye!");
+        log.info("cruel world!");
     }
 }
